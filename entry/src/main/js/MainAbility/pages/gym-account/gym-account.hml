@@ -1,0 +1,19 @@
+<div class="container" onswipe="onSwipe">
+    <text class="title">Account</text>
+    <div class="account-row">
+        <text class="account-label">Name</text>
+        <text class="account-value">{{ firstName }}</text>
+    </div>
+    <div class="account-row">
+        <text class="account-label">Surname</text>
+        <text class="account-value">{{ lastName }}</text>
+    </div>
+    <div class="account-row">
+        <text class="account-label">Weight</text>
+        <text class="account-value">{{ weightDisplay }}</text>
+    </div>
+    <div class="account-row">
+        <text class="account-label">Height</text>
+        <text class="account-value">{{ heightDisplay }}</text>
+    </div>
+</div>

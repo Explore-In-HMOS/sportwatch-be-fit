@@ -1,0 +1,51 @@
+<stack class="container">
+    <div class="container" onswipe="onSwipe">
+        <text class="title">{{ movementName }}</text>
+        <div class="set-row">
+            <text class="heart-rate">{{ heartRate }} bpm</text>
+            <text class="set-label">{{ currentSet }}/{{ totalSets }}</text>
+        </div>
+
+        <div class="picker-row">
+            <div class="picker-col">
+                <text class="picker-label">kg</text>
+                <picker-view class="picker" type="text" columns="1" range="{{kgRange}}" selected="{{kgIndex}}" onchange="onKgChange"></picker-view>
+            </div>
+            <div class="picker-col">
+                <text class="picker-label">reps</text>
+                <picker-view class="picker" type="text" columns="1" range="{{repsRange}}" selected="{{repsIndex}}" onchange="onRepsChange"></picker-view>
+            </div>
+        </div>
+
+        <div class="input-row">
+            <input class="btn-adjust" type="button" value="-" onclick="decreaseReps"></input>
+            <div class="value-box">
+                <text class="value-number">{{ reps }}</text>
+                <text class="value-unit">rep</text>
+            </div>
+            <input class="btn-adjust" type="button" value="+" onclick="increaseReps"></input>
+        </div>
+
+        <div class="nav-row">
+            <input class="btn-nav" type="button" value="<" onclick="prevSet" if="{{ currentSet > 1 }}"></input>
+            <input class="btn-nav-disabled" type="button" value="<" onclick="prevSet" if="{{ currentSet <= 1 }}"></input>
+
+            <stack class="btn-done-wrapper" onclick="markDone">
+                <input class="btn-done" type="button" value=""></input>
+                <image class="btn-done-icon" src="/common/icons/check.png"></image>
+            </stack>
+
+            <input class="btn-nav" type="button" value=">" onclick="nextSet" if="{{ currentSet < totalSets }}"></input>
+            <input class="btn-add-set" type="button" value="+" onclick="addSet" if="{{ currentSet >= totalSets }}"></input>
+        </div>
+    </div>
+
+    <stack class="pop-up-bg" if="{{ showPopup }}">
+        <div class="pop-up">
+            <text class="pop-up-title"> High Heart Rate </text>
+            <text class="pop-up-text"> Your heart rate has</text>
+            <text class="pop-up-text">increased above 150. </text>
+            <input class="btn-primary" type="button" value="" onclick="closePopup">Ok</input>
+        </div>
+    </stack>
+</stack>

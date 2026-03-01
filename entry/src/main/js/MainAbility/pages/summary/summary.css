@@ -1,0 +1,126 @@
+@import '../../common/styles/base.css';
+
+.title {
+    margin-top: 32px;
+}
+
+.stats-row {
+    width: 100%;
+    height: 80px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.stat-box {
+    width: 160px;
+    height: 90px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-value {
+    width: 160px;
+    font-size: 36px;
+    color: #64FF64;
+    text-align: center;
+}
+
+.stat-label {
+    width: 160px;
+    font-size: 32px;
+    color: #888888;
+    text-align: center;
+    margin-top: 2px;
+}
+
+.section-title {
+    font-size: 32px;
+    color: #999999;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    margin-top: 8px;
+}
+
+.summary-list {
+    width: 100%;
+    height: 370px;
+    flex-direction: column;
+    margin-top: 4px;
+}
+
+.summary-item {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 4px;
+}
+
+
+/* Effort stuff */
+.effort-item {
+    width: 100%;
+    height: 40px;
+}
+
+.effort-row {
+    width: 100%;
+    height: 40px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.effort-label {
+    font-size: 30px;
+    color: #999999;
+    margin-right: 8px;
+}
+
+.effort-value {
+    font-size: 30px;
+}
+
+.muscle-row {
+    width: 100%;
+    height: 40px;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.muscle-name {
+    width: 200px;
+    font-size: 30px;
+    height: 40px;
+    text-overflow: ellipsis;
+    color: white;
+    margin-left: 20px;
+}
+
+.bar-track {
+    width: 100px;
+    height: 16px;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    margin-left: 8px;
+}
+
+.bar-fill {
+    height: 16px;
+    background-color: #64FF64;
+    border-radius: 8px;
+}
+
+.muscle-pct {
+    width: 70px;
+    font-size: 30px;
+    height: 40px;
+    text-overflow: ellipsis;
+    color: #999999;
+    text-align: right;
+    margin-left: 4px;
+}

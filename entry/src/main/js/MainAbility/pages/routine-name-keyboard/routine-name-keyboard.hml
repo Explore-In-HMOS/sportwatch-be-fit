@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="display-area" @click="openKeyboard">
+        <text class="input-text">{{ inputText || 'Give your routine a name...' }}</text>
+        <div class="cursor" if="{{ showCursor }}"></div>
+    </div>
+
+    <div class="keyboard" if="{{ showKeyboard }}">
+        <div class="keyboard-grid">
+            <div class="key-row" for="{{ currentRows }}">
+                <div class="key "
+                     for="{{ $item.keys }}"
+                     onclick="handleKeyPress($item)">
+                    <text class="key-text">{{ $item.value }}</text>
+                </div>
+
+            </div>
+            <div class="key-row">
+                <div class="key" @click="letterKeys">
+                    <text class="key-text">ABC</text>
+                </div>
+                <div class="key" @click="numKeys">
+                    <text class="key-text">123</text>
+                </div>
+                <div class="key" @click="symKeys">
+                    <text class="key-text">@!?</text>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="key-row">
+        <div class="key-nav" onclick="saveRoutine">
+            <text class="key-text">Ok</text>
+        </div>
+        <div class="key-nav" onclick="cancel">
+            <text class="key-text" >Cancel</text>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+<stack class="container">
+    <div class="container" onswipe="onSwipe">
+        <list class="movement-list">
+            <list-item class="list-spacer">
+                <div class="list-spacer"></div>
+            </list-item>
+            <list-item for="{{items}}" class="movement-item" tid="id">
+                <div class="movement-card" onclick="toggleMovement({{$idx}})">
+                    <div class="movement-card-left">
+                        <text class="movement-name">{{ $item.name }}</text>
+                        <text class="muscle-groups-name">{{ $item.muscles }}</text>
+                    </div>
+                    <div class="manual-checkbox" if="{{!$item.selected}}">
+                        <text class="checkbox-empty"> </text>
+                    </div>
+                    <div class="manual-checkbox-checked" if="{{$item.selected}}">
+                        <image class="checkbox-icon" src="/common/icons/check.png"></image>
+                    </div>
+                </div>
+            </list-item>
+            <list-item class="list-spacer">
+                <div class="list-spacer"></div>
+            </list-item>
+        </list>
+    </div>
+
+    <input class="btn-arc" type="button" value="" onclick="select"></input>
+    <text class="btn-arc-text" onclick="select">Select</text>
+</stack>
+

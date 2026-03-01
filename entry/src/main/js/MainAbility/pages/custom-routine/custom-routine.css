@@ -1,0 +1,113 @@
+@import '../../common/styles/base.css';
+
+.container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.movement-list {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.movement-item {
+    width: 100%;
+    height: 106px;
+    margin-bottom: 10px;
+}
+
+.movement-item-right {
+    width: 203px;
+    height: 86px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.movement-item-left {
+    width: 205px;
+    height: 86px;
+    padding-left: 24px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.movement-card {
+    width: 90%;
+    height: 106px;
+    margin-left: 22px;
+    border-radius: 28px;
+    background-color: #2a2a2a;
+    padding-left: 24px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-row {
+    width: 220px;
+    height: 100px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 12px;
+}
+
+.btn-nav {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 34px;
+    text-align: center;
+}
+
+.btn-increment {
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    margin-top: 8px;
+    background-color: #444444;
+    color: white;
+    font-size: 36px;
+    text-align: center;
+}
+
+.text-increment {
+    padding-left: 3;
+    padding-right: 3;
+}
+
+.btn-done {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: #64FF64;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.space {
+    width: 100%;
+    height: 36px;
+}
+
+.routine-btn-container {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 16px;
+    align-content: center;
+    align-items: center;
+}
+
+.routine-btn {
+    width: 80%;
+    height: 100px;
+    border-radius: 50px;
+    background-color: #64FF64;
+    font-size: 32px;
+    color: black;
+    margin-left: 42%;
+}

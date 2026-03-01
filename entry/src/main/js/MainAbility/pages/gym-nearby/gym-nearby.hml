@@ -1,0 +1,18 @@
+<div class="container" onswipe="onSwipe">
+    <text class="title">Nearby Gyms</text>
+    <list class="nearby-list">
+        <list-item for="{{ items }}" class="nearby-item" tid="id">
+            <div class="nearby-card">
+                <div class="nearby-left">
+                    <text class="nearby-name">{{ $item.name }}</text>
+                    <text class="nearby-area">{{ $item.area }}</text>
+                </div>
+                <text class="nearby-distance">{{ $item.distance }}</text>
+            </div>
+        </list-item>
+        <list-item class="list-spacer">
+            <div class="list-spacer"></div>
+        </list-item>
+    </list>
+</div>
+

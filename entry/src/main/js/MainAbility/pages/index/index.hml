@@ -1,0 +1,75 @@
+<div class="container">
+    <swiper class="swiper" index="{{ index }}" duration="200" onchange="change" indicator="false" autoplay="false" loop="false">
+        <div class="history-container">
+            <text class="title">History</text>
+            <text class="history-empty" if="{{!hasHistory}}">No workouts yet</text>
+            <list class="history-list">
+                <list-item for="{{ history }}" class="history-item" tid="id">
+                    <div class="history-card" onclick="openHistory({{ $idx }})">
+                        <div class="history-left">
+                            <text class="history-name">{{ $item.workoutName }}</text>
+                            <text class="history-date">{{ $item.dateDisplay }}</text>
+                        </div>
+                        <div class="history-right">
+                            <text class="history-meta">{{ $item.durationMin }}m</text>
+                            <text class="history-meta">{{ $item.totalSets }} sets</text>
+                        </div>
+                    </div>
+                </list-item>
+                <list-item class="list-spacer">
+                    <div class="spacer"></div>
+                </list-item>
+            </list>
+        </div>
+        <div class="container">
+            <list class="routine-list">
+                <list-item class="list-spacer">
+                    <div class="list-spacer"></div>
+                </list-item>
+
+                <list-item class="routine-btn-container">
+                    <input class="routine-btn" type="button" value="Create Routine" onclick="createRoutine"></input>
+                </list-item>
+                <list-item for="{{routineNames}}" class="routine-item" tid="id">
+                    <div class="routine-card" onclick="startWorkout({{$item.id}}, {{$item.name}})">
+                        <text class="text-default">{{$item.name}}</text>
+                    </div>
+                </list-item>
+
+                <list-item class="list-spacer">
+                    <div class="list-spacer"></div>
+                </list-item>
+            </list>
+        </div>
+        <div class="container">
+            <list class="profile-list">
+                <list-item class="list-spacer">
+                    <div class="list-spacer"></div>
+                </list-item>
+
+                <list-item class="profile-item">
+                    <input class="profile-btn" type="button" value="Account" onclick="openGymAccount"></input>
+                </list-item>
+                <list-item class="profile-item">
+                    <input class="profile-btn" type="button" value="Gym Subscription" onclick="openGymSubscription"></input>
+                </list-item>
+                <list-item class="profile-item">
+                    <input class="profile-btn" type="button" value="Entry QR" onclick="openGymQr"></input>
+                </list-item>
+                <list-item class="profile-item">
+                    <input class="profile-btn" type="button" value="Nearby Gyms" onclick="openGymNearby"></input>
+                </list-item>
+
+                <list-item class="list-spacer">
+                    <div class="list-spacer"></div>
+                </list-item>
+            </list>
+        </div>
+    </swiper>
+    <div class="indicator-container">
+        <div class="indicator-dot" for="{{ pageNums }}"
+            style="background-color: {{ dotIndex === $idx ? '#64FF64' : '#C4C4C4' }};
+                width: {{ dotIndex === $idx ? '20px' : '10px' }};">
+        </div>
+    </div>
+</div>

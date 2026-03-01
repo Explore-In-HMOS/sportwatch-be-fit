@@ -1,0 +1,45 @@
+<stack class="container">
+    <div class="container">
+        <text class="title">Completed</text>
+
+        <list class="summary-list">
+            <list-item class="stats-row">
+                <div class="stat-box">
+                    <text class="stat-value">{{elapsedTime}}</text>
+                    <text class="stat-label">Duration</text>
+                </div>
+                <div class="stat-box">
+                    <text class="stat-value">{{volumeDisplay}}</text>
+                    <text class="stat-label">Volume</text>
+                </div>
+            </list-item>
+
+            <list-item class="effort-item">
+                <div class="effort-row">
+                    <text class="effort-label">Effort:</text>
+                    <text class="effort-value" style="color: {{effortColor}};">{{effortLabel}}</text>
+                </div>
+            </list-item>
+
+            <list-item class="section-title">
+                <text class="section-title">Muscles Worked</text>
+            </list-item>
+
+            <list-item for="{{muscles}}" class="summary-item">
+                <div class="muscle-row">
+                    <text class="muscle-name">{{$item.name}}</text>
+                    <div class="bar-track">
+                        <div class="bar-fill" style="width: {{$item.barWidth}};"></div>
+                    </div>
+                    <text class="muscle-pct">{{$item.label}}</text>
+                </div>
+            </list-item>
+            <list-item class="arc-btn-spacer">
+                <div class="arc-btn-spacer"></div>
+            </list-item>
+        </list>
+    </div>
+
+    <input class="btn-arc" type="button" value="" onclick="goHome"></input>
+    <text class="btn-arc-text">Done</text>
+</stack>

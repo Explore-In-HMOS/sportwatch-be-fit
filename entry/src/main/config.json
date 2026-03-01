@@ -1,0 +1,67 @@
+{
+  "app": {
+    "bundleName": "com.hmosdemos.lite_wearable.be_fit",
+    "vendor": "hmosdemos",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "deviceType": [
+      "liteWearable"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "abilities": [
+      {
+        "name": ".MainAbility",
+        "srcLanguage": "js",
+        "srcPath": "MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:MainAbility_desc",
+        "label": "$string:MainAbility_label",
+        "type": "page"
+      }
+    ],
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.VIBRATE",
+        "reason": "Vibration usage.",
+        "usedScene": {
+          "when": "always"
+        }
+      },
+      {
+        "name": "ohos.permission.READ_HEALTH_DATA",
+        "reason": "Heart rate usage.",
+        "usedScene": {
+          "when": "always"
+        }
+      }
+    ],
+    "js": [
+      {
+        "pages": [
+          "pages/index/index",
+          "pages/workout/workout",
+          "pages/movement/movement",
+          "pages/summary/summary",
+          "pages/history-detail/history-detail",
+          "pages/routine-selection/routine-selection",
+          "pages/custom-routine/custom-routine",
+          "pages/routine-name-keyboard/routine-name-keyboard",
+          "pages/gym-account/gym-account",
+          "pages/gym-subscription/gym-subscription",
+          "pages/gym-qr/gym-qr",
+          "pages/gym-nearby/gym-nearby"
+        ],
+        "name": ".MainAbility"
+      }
+    ]
+  }
+}

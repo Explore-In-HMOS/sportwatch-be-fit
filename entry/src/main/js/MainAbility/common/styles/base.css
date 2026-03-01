@@ -1,0 +1,103 @@
+.container {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Page title texts */
+.title {
+    width: 100%;
+    height: 60px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+}
+
+/* Green accent button - pill shaped */
+.btn-primary {
+    width: 80%;
+    height: 100px;
+    background-color: #64FF64;
+    color: black;
+    font-size: 32px;
+    border-radius: 50px;
+}
+
+.btn-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: #333333;
+    color: black;
+    font-size: 36px;
+    text-align: center;
+}
+
+.btn-circle-disabled {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: #1a1a1a;
+    color: #444444;
+    font-size: 36px;
+    text-align: center;
+}
+
+/* Use together with btn arc text in a stack */
+.btn-arc {
+    width: 1200px;
+    height: 1200px;
+    border-radius: 600px;
+    background-color: #64FF64;
+    top: 80%;
+    left: -373px;
+}
+
+/* Use together with btn arc in a stack */
+.btn-arc-text {
+    width: 100%;
+    height: 40px;
+    font-size: 32px;
+    color: black;
+    text-align: center;
+    top: 85%;
+    left: 0px;
+}
+
+/* Reverse arc button, on top */
+.btn-arc-top {
+    width: 1200px;
+    height: 1200px;
+    border-radius: 600px;
+    background-color: #64FF64;
+    top: -244.3%;
+    left: -373px;
+}
+
+/* Use together with btn-arc-top */
+.btn-arc-text-top {
+    width: 100%;
+    height: 40px;
+    font-size: 32px;
+    color: black;
+    text-align: center;
+    top: 5%;
+    left: 0px;
+}
+
+/* Spacer to put on bottom of lists if the screen has arc button */
+.arc-btn-spacer {
+    height: 30%;
+}
+
+.list-spacer {
+    width: 100%;
+    height: 72px;
+}
+
+.spacer {
+    width: 100%;
+    height: 72px;
+}

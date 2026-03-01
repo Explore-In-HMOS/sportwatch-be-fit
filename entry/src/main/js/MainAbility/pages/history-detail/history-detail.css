@@ -1,0 +1,193 @@
+@import '../../common/styles/base.css';
+
+.title {
+    margin-top: 32px;
+}
+
+.subtitle {
+    font-size: 28px;
+    color: #999999;
+    text-align: center;
+    width: 100%;
+}
+
+.stats-row {
+    width: 100%;
+    height: 80px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.stat-box {
+    width: 160px;
+    height: 90px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-value {
+    width: 160px;
+    font-size: 36px;
+    color: #64FF64;
+    text-align: center;
+}
+
+.stat-label {
+    width: 160px;
+    font-size: 32px;
+    color: #888888;
+    text-align: center;
+    margin-top: 2px;
+}
+
+/* Effort stuff */
+.effort-item {
+    width: 100%;
+    height: 40px;
+}
+
+.effort-row {
+    width: 100%;
+    height: 40px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.effort-label {
+    font-size: 30px;
+    color: #999999;
+    margin-right: 8px;
+}
+
+.effort-value {
+    font-size: 30px;
+}
+
+.section-title {
+    font-size: 32px;
+    color: #999999;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    margin-top: 8px;
+}
+
+.summary-list {
+    width: 100%;
+    height: 370px;
+    flex-direction: column;
+    margin-top: 4px;
+}
+
+.summary-item {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 4px;
+}
+
+.muscle-row {
+    width: 100%;
+    height: 40px;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.muscle-name {
+    width: 200px;
+    font-size: 30px;
+    height: 40px;
+    text-overflow: ellipsis;
+    color: white;
+    margin-left: 20px;
+}
+
+.bar-track {
+    width: 100px;
+    height: 16px;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    margin-left: 8px;
+}
+
+.bar-fill {
+    height: 16px;
+    background-color: #64FF64;
+    border-radius: 8px;
+}
+
+.muscle-pct {
+    width: 70px;
+    font-size: 30px;
+    height: 40px;
+    text-overflow: ellipsis;
+    color: #999999;
+    text-align: right;
+    margin-left: 4px;
+}
+
+/** Set related info */
+.movement-list {
+    width: 100%;
+    height: 370px;
+    flex-direction: column;
+    margin-top: 8px;
+}
+
+.movement-item {
+    width: 100%;
+    height: 116px;
+    margin-bottom: 16px;
+}
+
+.pill-card {
+    width: 90%;
+    height: 116px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2a2a2a;
+    border-radius: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 22px;
+}
+
+.card-left {
+    width: 280px;
+    height: 110px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.movement-name {
+    width: 280px;
+    height: 40px;
+    font-size: 34px;
+    color: white;
+    text-overflow: ellipsis;
+}
+
+.movement-reps {
+    width: 240px;
+    font-size: 28px;
+    height: 36px;
+    color: #999999;
+    margin-top: 4px;
+    text-overflow: ellipsis;
+}
+
+.set-counter {
+    font-size: 34px;
+    color: #64FF64;
+}
+
+.set-counter-done {
+    font-size: 34px;
+    color: #64FF64;
+}

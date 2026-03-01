@@ -1,0 +1,36 @@
+@import '../../common/styles/base.css';
+
+.title {
+    margin-top: 24px;
+}
+
+.info-row {
+    width: 90%;
+    height: 50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+
+.info-label {
+    font-size: 32px;
+    color: #b8b8b8;
+    margin-right: 8px;
+}
+
+.info-value {
+    font-size: 32px;
+    color: white;
+    text-align: right;
+    text-overflow: ellipsis;
+    margin-right: 100%;
+}
+
+.status-active {
+    color: #4caf50;
+}
+
+.days-value {
+    color: #64FF64;
+}

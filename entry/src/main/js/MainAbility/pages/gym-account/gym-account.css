@@ -1,0 +1,28 @@
+@import '../../common/styles/base.css';
+
+.title {
+    margin-top: 24px;
+}
+
+.account-row {
+    width: 90%;
+    height: 50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+
+.account-label {
+    font-size: 32px;
+    color: #b8b8b8;
+    text-overflow: ellipsis;
+}
+
+.account-value {
+    font-size: 32px;
+    color: white;
+    text-align: right;
+    text-overflow: ellipsis;
+    margin-right: 100%;
+}

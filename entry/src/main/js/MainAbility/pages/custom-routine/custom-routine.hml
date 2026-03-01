@@ -1,0 +1,31 @@
+<stack class="container">
+    <div class="container" onswipe="onSwipe">
+        <list class="movement-list" if="{{!popupVisible}}">
+            <list-item class="list-spacer">
+                <div class="list-spacer"></div>
+            </list-item>
+
+            <list-item class="routine-btn-container">
+                <input class="routine-btn" type="button" value="Add Movement" onclick="addMovement"></input>
+            </list-item>
+            <list-item for="{{items}}" class="movement-item" tid="id">
+                <div class="movement-card" onclick="">
+                    <div class="movement-item-left">
+                        <text class="">{{$item.name}}</text>
+                    </div>
+                    <div class="movement-item-right">
+                        <input class="btn-increment" type="button" value="-" onclick="increaseSetCount({{$item.name}}, -1)"></input>
+                        <text class="text-increment">{{$item.setCount}}</text>
+                        <input class="btn-increment" type="button" value="+" onclick="increaseSetCount({{$item.name}}, 1)"></input>
+                    </div>
+                </div>
+            </list-item>
+            <list-item class="list-spacer">
+                <div class="spacer"></div>
+            </list-item>
+        </list>
+    </div>
+
+    <input class="btn-arc" type="button" value="" onclick="select"></input>
+    <text class="btn-arc-text" onclick="done">Done</text>
+</stack>

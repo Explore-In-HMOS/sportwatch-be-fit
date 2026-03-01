@@ -1,0 +1,16 @@
+<div class="container" onswipe="onSwipe">
+    <text class="title">Subscription</text>
+
+    <div class="info-row">
+        <text class="info-label">Status:</text>
+        <text class="info-value status-active">{{status}}</text>
+    </div>
+    <div class="info-row">
+        <text class="info-label">Days Left:</text>
+        <text class="info-value days-value">{{daysLeft}}</text>
+    </div>
+    <div class="info-row">
+        <text class="info-label">Expires:</text>
+        <text class="info-value">{{expiresAt}}</text>
+    </div>
+</div>

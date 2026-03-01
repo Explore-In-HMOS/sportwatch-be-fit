@@ -1,0 +1,36 @@
+<stack class="container">
+    <div class="container" onswipe="onSwipe">
+        <text class="title">{{ workoutName }}</text>
+        <div class="stats-row">
+            <text class="heart-rate">{{ heartRate }} bpm</text>
+            <text class="timer">{{ elapsedTime }}</text>
+        </div>
+        <list class="movement-list">
+            <list-item for="{{ movements }}" class="movement-item">
+                <div class="pill-card" onclick="openMovement({{ $idx }})">
+                    <div class="card-left">
+                        <text class="movement-name">{{ $item.name }}</text>
+                    </div>
+                    <text class="set-counter-done" if="{{ $item.isComplete }}">{{ $item.setDisplay }}</text>
+                    <text class="set-counter" if="{{ ! $item.isComplete }}">{{ $item.setDisplay }}</text>
+                </div>
+            </list-item>
+            <list-item class="arc-btn-spacer">
+                <div class="arc-btn-spacer"></div>
+            </list-item>
+        </list>
+    </div>
+
+    <input class="btn-arc" type="button" value="" onclick="finishWorkout"></input>
+    <text class="btn-arc-text" onclick="finishWorkout">Finish</text>
+
+    <stack class="pop-up-bg" if="{{ showPopup }}">
+        <div class="pop-up">
+            <text class="pop-up-title"> High Heart Rate </text>
+            <text class="pop-up-text"> Your heart rate has</text>
+            <text class="pop-up-text">increased above 150. </text>
+            <input class="btn-primary" type="button" value="" onclick="closePopup">Ok</input>
+        </div>
+    </stack>
+</stack>
+

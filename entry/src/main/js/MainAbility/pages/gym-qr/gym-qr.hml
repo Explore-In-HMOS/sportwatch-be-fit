@@ -1,0 +1,11 @@
+<stack class="container">
+    <div class="container" onswipe="onSwipe">
+        <text class="title">Entry QR</text>
+        <qrcode value="{{ qrValue }}" class="qr-code"
+                style="color: {{ qrColor }}; background-color: {{ qrBackground }};">
+        </qrcode>
+        <text class="qr-value">{{ qrValue }}</text>
+    </div>
+    <input class="btn-arc" type="button" value="" onclick="cycleQr"></input>
+    <text class="btn-arc-text" onclick="cycleQr">New</text>
+</stack>

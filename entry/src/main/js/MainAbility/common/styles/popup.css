@@ -1,0 +1,33 @@
+.pop-up {
+    width: 80%;
+    height: 60%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #ff2a2a2a;
+    top: 20%;
+    left: 10%;
+    padding: 5px;
+}
+
+.pop-up-bg {
+    width: 100%;
+    height: 100%;
+    background-color: #a6999999;
+}
+
+.pop-up-text {
+    font-size: 26px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.pop-up-title {
+    width: 100%;
+    height: 60px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
